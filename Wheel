@@ -1,0 +1,145 @@
+<div class="home-hero__wheel home-wheel" >
+                <div class="home-wheel__wrap">
+                    <div class="block">
+                        <?php $tooltips = get_field('home_hero_wheel'); ?>
+
+                        <?php
+                        function isMobileDevice() {
+                            return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
+                        }
+                        ?>
+                        <div class="home-wheel__tooltips">
+                            <div class="home-wheel__tooltip-center home-tooltip" style="background: <?php echo $tooltips[0]['home_hero_wheel_color']?>">
+                                <div class="tooltip-dec" style="border-color: <?php echo $tooltips[0]['home_hero_wheel_color']?>"></div>
+                                <div class="home-tooltip__title"><?php echo $tooltips[0]['home_hero_wheel_title']?></div>
+                                <div class="home-tooltip__desc"><?php echo $tooltips[0]['home_hero_wheel_description']?></div>
+                                <?php if (isMobileDevice()):
+                                    $link = $tooltips[0]['home_hero_wheel_link'];
+                                    if( $link ):
+                                        $link_url = $link['url'];
+                                        $link_title = $link['title'];
+                                        $link_target = $link['target'] ? $link['target'] : '_self';
+                                        ?>
+                                        <a class="home-tooltip__link" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                                    <?php endif; ?>
+                                <?php endif; ?>
+                            </div>
+
+                            <div class="home-wheel__tooltip-1 home-tooltip" style="background: <?php echo $tooltips[1]['home_hero_wheel_color']?>">
+                                <div class="tooltip-dec" style="border-color: <?php echo $tooltips[1]['home_hero_wheel_color']?>"></div>
+                                <div class="home-tooltip__title"><?php echo $tooltips[1]['home_hero_wheel_title']?></div>
+                                <div class="home-tooltip__desc"><?php echo $tooltips[1]['home_hero_wheel_description']?></div>
+                                <?php if (isMobileDevice()):
+                                    $link = $tooltips[1]['home_hero_wheel_link'];
+                                    if( $link ):
+                                        $link_url = $link['url'];
+                                        $link_title = $link['title'];
+                                        $link_target = $link['target'] ? $link['target'] : '_self';
+                                        ?>
+                                        <a class="home-tooltip__link" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                                    <?php endif; ?>
+                                <?php endif; ?>
+                            </div>
+
+                            <div class="home-wheel__tooltip-2 home-tooltip" style="background: <?php echo $tooltips[2]['home_hero_wheel_color']?>">
+                                <div class="tooltip-dec" style="border-color: <?php echo $tooltips[2]['home_hero_wheel_color']?>"></div>
+                                <div class="home-tooltip__title"><?php echo $tooltips[2]['home_hero_wheel_title']?></div>
+                                <div class="home-tooltip__desc"><?php echo $tooltips[2]['home_hero_wheel_description']?></div>
+                                <?php if (isMobileDevice()):
+                                    $link = $tooltips[2]['home_hero_wheel_link'];
+                                    if( $link ):
+                                        $link_url = $link['url'];
+                                        $link_title = $link['title'];
+                                        $link_target = $link['target'] ? $link['target'] : '_self';
+                                        ?>
+                                        <a class="home-tooltip__link" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                                    <?php endif; ?>
+                                <?php endif; ?>
+                            </div>
+
+                            <div class="home-wheel__tooltip-3 home-tooltip" style="background: <?php echo $tooltips[3]['home_hero_wheel_color']?>">
+                                <div class="tooltip-dec" style="border-color: <?php echo $tooltips[3]['home_hero_wheel_color']?>"></div>
+                                <div class="home-tooltip__title"><?php echo $tooltips[3]['home_hero_wheel_title']?></div>
+                                <div class="home-tooltip__desc"><?php echo $tooltips[3]['home_hero_wheel_description']?></div>
+                                <?php if (isMobileDevice()):
+                                    $link = $tooltips[3]['home_hero_wheel_link'];
+                                    if( $link ):
+                                        $link_url = $link['url'];
+                                        $link_title = $link['title'];
+                                        $link_target = $link['target'] ? $link['target'] : '_self';
+                                        ?>
+                                        <a class="home-tooltip__link" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                                    <?php endif; ?>
+                                <?php endif; ?>
+                            </div>
+
+                            <div class="home-wheel__tooltip-4 home-tooltip" style="background: <?php echo $tooltips[4]['home_hero_wheel_color']?>">
+                                <div class="tooltip-dec" style="border-color: <?php echo $tooltips[4]['home_hero_wheel_color']?>"></div>
+                                <div class="home-tooltip__title"><?php echo $tooltips[4]['home_hero_wheel_title']?></div>
+                                <div class="home-tooltip__desc"><?php echo $tooltips[4]['home_hero_wheel_description']?></div>
+                                <?php if (isMobileDevice()):
+                                    $link = $tooltips[4]['home_hero_wheel_link'];
+                                    if( $link ):
+                                        $link_url = $link['url'];
+                                        $link_title = $link['title'];
+                                        $link_target = $link['target'] ? $link['target'] : '_self';
+                                        ?>
+                                        <a class="home-tooltip__link" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                                    <?php endif; ?>
+                                <?php endif; ?>
+                            </div>
+
+                            <div class="home-wheel__tooltip-5 home-tooltip" style="background: <?php echo $tooltips[5]['home_hero_wheel_color']?>">
+                                <div class="tooltip-dec" style="border-color: <?php echo $tooltips[5]['home_hero_wheel_color']?>"></div>
+                                <div class="home-tooltip__title"><?php echo $tooltips[5]['home_hero_wheel_title']?></div>
+                                <div class="home-tooltip__desc"><?php echo $tooltips[5]['home_hero_wheel_description']?></div>
+                                <?php if (isMobileDevice()):
+                                    $link = $tooltips[0]['home_hero_wheel_link'];
+                                    if( $link ):
+                                        $link_url = $link['url'];
+                                        $link_title = $link['title'];
+                                        $link_target = $link['target'] ? $link['target'] : '_self';
+                                        ?>
+                                        <a class="home-tooltip__link" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                                    <?php endif; ?>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+
+                        <div class="home-wheel__rotate-area">
+                            <style>
+                                /* Area 1 */
+
+                                .svg-element-1:hover .svg-element-bg {
+                                    fill: <?php echo $tooltips[1]['home_hero_wheel_color']?>;
+                                }
+
+                                /* Area 2 */
+
+                                .svg-element-2:hover .svg-element-bg {
+                                    fill: <?php echo $tooltips[2]['home_hero_wheel_color']?>;
+                                }
+
+                                /* Area 3 */
+
+                                .svg-element-3:hover .svg-element-bg {
+                                    fill: <?php echo $tooltips[3]['home_hero_wheel_color']?>;
+                                }
+
+                                /* Area 4 */
+
+                                .svg-element-4:hover .svg-element-bg {
+                                    fill: <?php echo $tooltips[4]['home_hero_wheel_color']?>;
+                                }
+
+                                /* Area 5 */
+
+                                .svg-element-5:hover .svg-element-bg {
+                                    fill: <?php echo $tooltips[5]['home_hero_wheel_color']?>;
+                                }
+
+                                /* Area Center */
+
+                                .svg-element-center:hover .svg-element-bg {
+                                    fill: <?php echo $tooltips[0]['home_hero_wheel_color']?>;
+                                }
